@@ -3,7 +3,7 @@
 int main() {
 
     //Declarando o tabuleiro
-    int tabuleiro [10][10];
+    int tabuleiro [10][10] = {0};
 
     //posiciona um navio na vertical
     tabuleiro[1][1] = 1;
@@ -22,6 +22,19 @@ int main() {
     printf("Navio horizontal\n");
     printf("(4,4)\n(4,5)\n(4,6)\n\n");
 
+
+    //Exibindo o tabuleiro
+    printf("\nTabuleiro:\n\n");
+
+    for (int i = 0; i < 10; i++)
+    {
+        for (int y = 0; y < 10; y++)
+        {
+            printf("%d ", tabuleiro[i][y]);
+        }
+        printf("\n");
+    }
+    printf("\n\n");
 
     return 0;
 }
