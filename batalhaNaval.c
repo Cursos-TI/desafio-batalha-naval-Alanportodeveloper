@@ -25,11 +25,14 @@ int main() {
 
     //Exibindo o tabuleiro
     printf("\nTabuleiro:\n\n");
-
+    // Laço externo que percorre as linhas do tabuleiro (de 0 até 9).
     for (int i = 0; i < 10; i++)
     {
+        // Laço interno que percorre as colunas do tabuleiro (de 0 até 9).
         for (int y = 0; y < 10; y++)
         {
+            // Imprime o valor da célula [i][y] do tabuleiro.
+            // Mostra 0 se não houver navio e 1 se houver parte de um navio.
             printf("%d ", tabuleiro[i][y]);
         }
         printf("\n");
